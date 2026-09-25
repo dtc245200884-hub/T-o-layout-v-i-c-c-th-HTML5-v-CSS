@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            float: left;
+            width: 60%;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        article {
+            padding: 10px;
+        }
+
+        aside {
+            float: left;
+            width: 20%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        footer {
+            clear: both;
+            background-color: #777;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<section>
+    <article>
+        <h1>HTML5</h1>
+        <p>
+            HTML5 là phiên bản mới của HTML, cung cấp nhiều thẻ
+            semantic giúp xây dựng cấu trúc trang web rõ ràng hơn.
+        </p>
+
+        <p>
+            Các thẻ như header, nav, section, article, aside và footer
+            thường được sử dụng để tạo layout cho trang web.
+        </p>
+    </article>
+</section>
+
+<aside>
+    <h2>About</h2>
+    <p>
+        Đây là phần thông tin bổ sung của trang web.
+    </p>
+</aside>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+</body>
+</html>
+Cấu trúc layout
+┌─────────────────────────────────────────────┐
+│                  HEADER                     │
+├────────────┬───────────────────┬────────────┤
+│            │                   │            │
+│    NAV     │      SECTION      │    ASIDE   │
+│   20%      │       60%         │    20%     │
+│            │     ARTICLE       │            │
+│            │                   │            │
+├────────────┴───────────────────┴────────────┤
+│                  FOOTER                     │
+└─────────────────────────────────────────────┘
